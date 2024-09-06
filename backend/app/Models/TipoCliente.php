@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class TipoCliente extends Model
 {
     use HasFactory;
+    protected $fillable = ['nombre'];
     protected $table = 'tipos_cliente';
 
     public function clientes()
